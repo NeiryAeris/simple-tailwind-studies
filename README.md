@@ -19,7 +19,8 @@ Currently, two official plugins are available:
 - npx tailwindcss init -p
 
 # the tailwind.config.js file at least should have this
-`export default {
+```
+export default {
   content: [
     './index.html',
     './src/**/*.{js,tx,jsx,tsx}'
@@ -29,18 +30,21 @@ Currently, two official plugins are available:
   },
   plugins: [],
 }
-`
+```
 
 # the postcss.config.js file normally have this
-`export default {
+```
+export default {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
   },
 }
-`
+```
 
 # the index.css file should have these inside
-`@tailwind base;
+```
+@tailwind base;
 @tailwind components;
-@tailwind utilities;`
+@tailwind utilities;
+```
